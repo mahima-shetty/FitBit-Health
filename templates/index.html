@@ -1,0 +1,186 @@
+<!DOCTYPE HTML>
+<!--
+	Caminar by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>FitBit&Health</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="static/css/main.css" />
+		<link rel="stylesheet" href="static/css/font-awesome.min.css" />
+
+
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<div class="logo"><a href="#">FitBit&Health <span>by Mahima S. Shetty</span></a></div>
+			</header>
+
+		<!-- Main -->
+			<section id="main">
+				<div class="inner">
+
+				<!-- One -->
+					<section id="one" class="wrapper style1">
+
+						<div class="image fit flush">
+							<img src="static/images/pic02.jpg" alt="">
+						</div>
+						<header class="special">
+							<h2>Activity & Lifestyle</h2>
+							<p>“ You only live once, but if you do it right, once is enough.” — Mae West.</p>
+						</header>
+						<div class="content">
+							<p><h1 style="font-size: large;">What are calories?</h1>
+
+								Put simply, calories are a measure of energy. Traditionally, it was a fairly common unit of energy, but nowadays it's been relegated to describe almost solely nutrition and the energy content in food. The definition of a calorie is the energy required to raise the temperature of 1 gram of water by 1C. In modern times the definition of a calorie has been tuned and improved to a more reliable and repeatable one until we have arrived at the current: 1 calorie is equivalent to 4.18 joules.</p>
+							<p>When you mention calories, people immediately think about nutrition, weight loss, and even health problems associated with being overweight, such as heart disease. This is because body fat and calories are very closely related. Body fat is the way our body stores energy for times of necessity, that is, body fat is how we store those extra calories that we ate but never burned. Fat is not necessarily a bad thing, as we explained in our healthy body fat calculator</p>
+							<div class="login">
+								<h1>Predict Burnt Calories</h1>
+
+								<h3>Enter the following values to predict the Calories burnt for the FitBit Analysis<br><span>(Enter only numerics)</span></h3>
+
+								<div class="forminput" style="text-align: center;">
+								<form action="/predict" method="post">
+									<input type="text" name="TotalSteps" placeholder="Enter Total Steps" required="required">
+									<input type="text" name="TotalDistance" placeholder="Enter Total Distance" required="required">
+									<input type="text" name="LoggedActivitiesDistance" placeholder="Enter Logged Activities Distance" required="required">
+									<input type="text" name="VeryActiveDistance" placeholder="Enter Very Active Distance" required="required">
+									<input type="text" name="ModeratelyActiveDistance" placeholder="Enter Moderately Active Distance" required="required">
+									<input type="text" name="LightActiveDistance" placeholder="Enter Light Active Distance" required="required">
+									<input type="text" name="SedentaryActiveDistance" placeholder="Enter Sedentary Active Distance" required="required">
+									<input type="text" name="VeryActiveMinutes" placeholder="Enter Very Active Minutes" required="required">
+									<input type="text" name="FairlyActiveMinutes" placeholder="Enter Fairly Active Minutes" required="required">
+									<input type="text" name="LightlyActiveMinutes" placeholder="Enter Lightly Active Minutes" required="required">
+									<input type="text" name="SedentaryMinutes" placeholder="Enter Sedentary Minutes" required="required">
+									<br>
+									<button type="submit" class="btn" style="text-transform: capitalize;  "> Predict </button>
+								</form>
+								{{prediction_text}}
+								</div>
+							</div>
+						</div>
+					</section>
+
+				<!-- Two -->
+					<section id="two" class="wrapper style2">
+						<header>
+							<h2>Walking Benefits</h2>
+							<p style="text-align:center,justify; text-transform: capitalize;"> Increased cardiovascular and pulmonary (heart and lung) fitness.<br>
+								Reduced risk of heart disease and stroke.<br>
+								Improved management of conditions such as hypertension (high blood pressure), high cholesterol, joint and muscular pain or stiffness, and diabetes.<br>
+								Stronger bones and improved balance.
+							</p>
+						</header>
+						<div class="content">
+							<div class="gallery">
+								<div>
+									<div class="image fit flush">
+										<a style="cursor: pointer; outline: currentcolor none 0px;"><img src="static/images/pic03.jpg" alt=""></a>
+									</div>
+								</div>
+								<div>
+									<div class="image fit flush">
+										<a style="cursor: pointer; outline: currentcolor none 0px;"><img src="static/images/pic01.jpg" alt=""></a>
+									</div>
+								</div>
+								<div>
+									<div class="image fit flush">
+										<a style="cursor: pointer; outline: currentcolor none 0px;"><img src="static/images/pic04.jpg" alt=""></a>
+									</div>
+								</div>
+								<div>
+									<div class="image fit flush">
+										<a style="cursor: pointer; outline: currentcolor none 0px;"><img src="static/images/pic05.jpg" alt=""></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+
+				<!-- Three -->
+					<section id="three" class="wrapper">
+						<h1 style="text-align: center; text-shadow: black 20px; font-size: 35px;">Exploratory Data Analysis</h1>
+						<div class="spotlight">
+							<div class="image flush"><img src="static/images/sedantryminutescalories.png" alt=""></div>
+							<div class="inner">
+								<h3>SedentaryMinutes vs. Calories</h3>
+								<p>We can observe that sedentary minutes is the measure of how many minutes is spent in sedentarily. Calories axis shows how many calories is shown as rate with respect to the sedentary minutes graph.
+									The graph show that the increase in the rate of minutes is directly proportional to the calorie burnt. </p>
+							</div>
+						</div>
+						<div class="spotlight alt">
+							<div class="image flush"><img src="static/images/fairlyactiveminutes.png" alt=""></div>
+							<div class="inner">
+								<h3>Fairly Active Minutes vs. Calories</h3>
+								<p>We can observe that FairlyActive minutes is the measure of how many minutes is spent in lightly active. Calories axis shows how many calories is shown as rate with respect to the sedentary minutes graph.
+									According to the graph, fairly active minutes is somewhat directly proportional to the measure of calories.</p>
+							</div>
+						</div>
+						<div class="spotlight">
+							<div class="image flush"><img src="static/images/lightlyactiveminutescalories.png" alt=""></div>
+							<div class="inner">
+								<h3>Lightly Active Minutes vs. Calories</h3>
+								<p>We can observe that Lightly Active minutes is the measure of how many minutes is spent in lightly active. Calories axis shows how many calories is shown as rate with respect to the sedentary minutes graph.
+									According to the graph, lightly active minutes is somewhat directly proportional to the measure of calories.</p>
+							</div>
+						</div>
+						<div class="spotlight alt">
+							<div class="image flush"><img src="static/images/veryactiveminutescalories.png" alt=""></div>
+							<div class="inner">
+								<h3>Very Active Minutes vs. Calories</h3>
+								<p>We can observe that Very Active minutes is the measure of how many minutes is spent in lightly active. Calories axis shows how many calories is shown as rate with respect to the sedentary minutes graph.
+									According to the graph, very active minutes is somewhat directly proportional to the measure of calories.</p>
+							</div>
+						</div>
+						<div class="spotlight">
+							<div class="image flush"><img src="static/images/caloriedifferemtdistance.png" alt=""></div>
+							<div class="inner">
+								<h3>Un-normailzed value of calorie and different activities based on Distance</h3>
+								<p>We can observe that Un-normalized of calories of different activities based on distance.
+									According to the graph, Total distance is highly fluctuating in its rate across the graph.</p>
+							</div>
+						</div>
+						<div class="spotlight alt">
+							<div class="image flush"><img src="static/images/caloriesanddifferentactivities.png" alt=""></div>
+							<div class="inner">
+								<h3>Un-normalized of calories of different activities based on Minutes</h3>
+								<p>We can observe that Un-normalized of calories of different activities based on distance.
+									According to the graph, Total Calorie is highly fluctuating in its rate across the graph.									
+								</p>
+							</div>
+						</div>
+						
+					</section>
+
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+					<ul class="icons">
+						<li><a href="https://www.linkedin.com/in/mahima-shetty-ai-ml/" class="icon fa-linkedin"><span class="label">Facebook</span></a></li>
+						<li><a href="https://www.instagram.com/mahimahello/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="mailto:mahimashetty369@gmail.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+					</ul>
+				</div>
+				<div class="copyright">
+					&copy; FitBit&Health_MahimaSShetty. All rights reserved. Images <a href="https://unsplash.com">Unsplash</a> Design <a href="https://templated.co">TEMPLATED</a>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="static/js/jquery.min.js"></script>
+			<script src="static/js/jquery.poptrox.min.js"></script>
+			<script src="static/js/skel.min.js"></script>
+			<script src="static/js/util.js"></script>
+			<script src="static/js/main.js"></script>
+
+	</body>
+</html>
