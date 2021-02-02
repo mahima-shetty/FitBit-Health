@@ -117,7 +117,6 @@ msgpack
 multipledispatch==0.6.0
 mypy-extensions==0.4.3
 mysql-connector-python==8.0.21
-navigator-updater==0.2.1
 nbclient 
 nbconvert 
 nbformat 
@@ -212,7 +211,7 @@ Send2Trash
 simplegeneric==0.8.1
 singledispatch 
 sip==4.19.13
-six @ file:///C:/ci/six_1605187374963/work
+six 
 snowballstemmer 
 sortedcollections 
 sortedcontainers 
