@@ -173,7 +173,6 @@ pyls-black
 pyls-spyder 
 pymongo==3.11.0
 PyNaCl 
-pyodbc===4.0.0-unsupported
 pyOpenSSL 
 pyparsing 
 pyreadline==2.1
