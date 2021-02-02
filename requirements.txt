@@ -198,7 +198,6 @@ requests-oauthlib==1.3.0
 retrying==1.3.3
 rope 
 rsa==4.6
-Rtree==0.9.4
 ruamel-yaml==0.15.87
 scikit-image==0.17.2
 scikit-learn 
